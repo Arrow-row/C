@@ -9,16 +9,16 @@ void insert(int arr[],int n){
 	while (arr[i-1]>key){
 		arr[i]=arr[i-1];
 		i--;
-		if (i==0)
+		if (i==0)	//i移动到数组左边界时，跳出while循环，执行arr[i]=key;
 			break;
 	}
 	arr[i]=key;
 }
 
-void insertionSort(int arr[],int n){
+void insertionSort(int arr[],int n){	//将arr的前n个元素做插入排序
 
 	int i;
-	for (i=1;i<n;i++){
+	for (i=1;i<n;i++){	//i=1表示从arr的第2个元素开始插入排序，对应数组下标是1，i最大可取n-1，就是数组最后一个元素
 		insert(arr,i);
 	}
 } 
