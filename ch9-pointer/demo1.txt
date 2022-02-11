@@ -1,0 +1,7 @@
+remote
+branch featue_x
+file demo.txt
+
+local
+branch featue_x
+file demo.txt
