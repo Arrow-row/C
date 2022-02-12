@@ -20,10 +20,11 @@ int main(){
 	printf("x = %f, y = %f, *p = %d\n",x,y,*p);
 */
 
-	float z=1,*q,m;
-	q=&z;
-	m=*q;
-	printf("&z=%f,q=%f,m=%f",&z,q,m);
+	int x=1,y=2,*p=&x,*q=&y,m;
+	
+	m=*p;
+	printf("&x=%d,p=%d,m=%d\n",&x,p,m);
+	printf("&y=%d,q=%d",&y,q);
 
 	return 0;
 }
